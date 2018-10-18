@@ -6,7 +6,7 @@
 
 - Synthesis - [@tz_fayvor](https://twitter.com/tz_fayvor) | [Mailme](phavorsparks@gmail.com)
 - Geeky Daniel - [@AyoolaDaniel12](https://twitter.com/AyoolaDaniel12) | [Mailme](Ayoolaolugbengadaniel4@gmail.com)
-- Chibuike Vincent - [@chibuikevincen7](https://twitter.com/chibuikevincen7) | [Mailme]()
+- Chibuike Vincent - [@chibuikevincen7](https://twitter.com/chibuikevincen7) | [Mailme](//)
 
 ### Section
 
@@ -25,4 +25,3 @@ Keeping track of progress is also a desired feature as well as offline study, so
 - __FrontEnd__: HTML, CSS || Bootstrap || Sass
 - __Backend__: NodeJs && Express
 - __Database__: MongoDb && Mongoose
-
