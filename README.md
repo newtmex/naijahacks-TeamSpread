@@ -22,6 +22,6 @@ Keeping track of progress is also a desired feature as well as offline study, so
 
 ### Proposed Stack
 
-- __FrontEnd__: HTML, CSS || Bootstrap || Sass
-- __Backend__: NodeJs && Express
-- __Database__: MongoDb && Mongoose
+- __FrontEnd__: HTML, CSS | Bootstrap | Sass
+- __Backend__: NodeJs & Express
+- __Database__: MongoDb & Mongoose
