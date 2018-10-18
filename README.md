@@ -1,52 +1,28 @@
-# Courseek
-
-Courseek is a course finder that helps you search for courses that best meet your current need. With courseek you reduce the amount of time you spend looking for the right course. We've got you covered. 😉
-
-## Project
-
-This project was powered by the `#naijaHack2018` and the `#TeamSpread` participated.
-
-You can reach the naijaHacks team here
-
-- __Twitter__: [@naijaHacks](https://twitter.com/naijaHacks)
-- __Official Website__: [NaijaHacks](https://naijahacks.com/)
+# NaijaHacks Hackathon 2018
 
 ## TeamSpread 🔥🔥🔥
 
-TeamSpread is made of more
+### Team Members
 
-- Synthesis - [@tz_fayvor](https://twitter.com/tz_fayvor)
-- Geeky Daniel - [@AyoolaDaniel12](https://twitter.com/AyoolaDaniel12)
-- Chibuike Vincent - [@chibuikevincen7](https://twitter.com/chibuikevincen7)
+- Synthesis - [@tz_fayvor](https://twitter.com/tz_fayvor) | [Mailme](phavorsparks@gmail.com)
+- Geeky Daniel - [@AyoolaDaniel12](https://twitter.com/AyoolaDaniel12) | [Mailme](Ayoolaolugbengadaniel4@gmail.com)
+- Chibuike Vincent - [@chibuikevincen7](https://twitter.com/chibuikevincen7) | [Mailme]()
 
-### Usage
+### Section
 
-- Clone the repo
-- Open the terminal and `npm install`
-- Run the app `npm start`
+### Problem
 
-### Live Hostig
+Developers most times find that they spend so much time looking for a befitting courseware or tutorial that teaches them exactly what they need to know. From personal experience, it's observable that you could have more than is required and therefore breed confusion and overloading of one's learning progres.
 
-The app will be hosted live and the link will be provided.
+### Proposed Solution
 
-### Contribution
+Time is of essence, so we seek to reduce the search time, by collating relevant courses from top online platforms and delivered to the user upon login or search. All the user has to do is sort, filter or jump straight to learning the course of choice.
 
-Follow these steps
+Keeping track of progress is also a desired feature as well as offline study, so that users can continue studying even if they happen to go offline.
 
-- fork the repo
-- clone your forked version to your laptop (local machine)
-- create a branch on what you are working on. i.e `git checkout -b frontend`
-- keep track of the upstream - `git remote add upstream <the original repo url>`
+### Proposed Stack
 
-__After working and you are ready to push:__
+- __FrontEnd__: HTML, CSS || Bootstrap || Sass
+- __Backend__: NodeJs && Express
+- __Database__: MongoDb && Mongoose
 
-- to update your local copy - `git fetch upstream`
-- then merge with your master - `git merge upstream/master`
-- next you merge your master with your branch - `git merge master frontend` as from our example above
-- if there are any conflicts, carefully resolve them. commit and then push your branch - `git push origin frontend`
-
-### Pull Request
-
-After pushing your branch, send a `PR` from your account so it could be merged.
-
-If any questions, please reach out ASAP via any of the channels.
