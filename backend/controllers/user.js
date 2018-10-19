@@ -15,10 +15,12 @@ exports.signup = async (req, res) => {
     message: 'user already registered'
   })
 
+  console.log(req.body)
   user = new User({
     username: req.body.username,
     password: req.body.password,
-    email: req.body.email
+    email: req.body.email,
+    languages: req.body.languages
   })
 
   const salt = await bcrypt.genSalt(10)
@@ -30,7 +32,8 @@ exports.signup = async (req, res) => {
     token,
     id: userDetails._id,
     username: userDetails.username,
-    email: userDetails.email
+    email: userDetails.email,
+    languages: userDetails.languages
   })
 }
 

@@ -20,7 +20,11 @@ const userSchema = new Schema({
     type: String,
     required: true,
     unique: true
-  }
+  },
+  languages: [{
+    name: { type: String, required: true },
+    level: { type: String, required: true }
+  }]
 })
 
 // Generate Token
@@ -46,8 +50,13 @@ const validateUser = user => {
       .min(5)
       .max(255)
       .required()
-      .email()
-	}
+      .email(),
+    languages: Joi.array()
+      .items(Joi.object().keys({
+        name: Joi.string().required(),
+        level: Joi.string().required()
+      }))
+  }
 
 	return Joi.validate(user, schema)
 }
