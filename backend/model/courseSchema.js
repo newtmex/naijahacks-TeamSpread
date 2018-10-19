@@ -5,5 +5,5 @@ const courseSchema = new Schema({
   title: { type: String, required: true },
   image_url: { type: String, required: true },
   level: { type: String, required: true },
-  
+  short_summary: { type: String, required: true }
 })
