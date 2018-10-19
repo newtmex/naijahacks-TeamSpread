@@ -10,7 +10,7 @@ const PORT = process.env.PORT
 const URI = process.env.MONGO_URI
 
 const userRoute = require('./routes/user')
-const error = require('./middlewars/errors')
+const error = require('./middleware/errors')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
