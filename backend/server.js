@@ -18,7 +18,7 @@ app.use(logger('dev'))
 app.use(cors())
 
 // connect mongoose
-mongoose.connect(URI, { useNewUrlParser: true })
+mongoose.connect(URI, { useNewUrlParser: true, useCreateIndex: true })
   .then(() => console.log('Connected to Database'))
   .catch(err => console.log('An error occurred...', err))
 

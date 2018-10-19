@@ -56,3 +56,5 @@ exports.get_all_users = async (req, res) => {
   if (!users) return res.status(500).send(error.message)
   res.send(users)
 }
+
+// Put request to update languages
