@@ -12,7 +12,14 @@ const courseSchema = new Schema({
   expected_learning: { type: String, required: true },
   available: { type: Boolean, required: true },
   expected_duration: { type: String, required: true },
-  type: { type: String, required: true }
+  type: { type: String, required: true },
+  video_url: { type: String },
+  likes: { type: Number },
+  comments: [{
+    username: { type: String, required: true },
+    comment: { type: String, required: true }
+  }],
+  shares: { type: Number }
 })
 
 const Course = mongoose.model('Courses', courseSchema)
