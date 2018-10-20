@@ -15,7 +15,6 @@ exports.signup = async (req, res) => {
     message: 'user already registered'
   })
 
-  console.log(req.body)
   user = new User({
     username: req.body.username,
     password: req.body.password,
@@ -45,8 +44,12 @@ exports.login = async (req, res, next) => {
     message: 'Resource not found'
   })
 
-  
-  res.json(user)
+  const token = user.generateToken()
+
+  res.json({
+    token,          
+    user
+  })
 }
 
 // Get all users
@@ -58,3 +61,12 @@ exports.get_all_users = async (req, res) => {
 }
 
 // Put request to update languages
+exports.update_languages = async (req, res) => {
+  const id = req.params.id
+  const user = await User.findByIdAndUpdate(id, {
+    languages: req.body.languages
+  }, { new: true }).select('-password -__v')
+
+  if (!user) return res.status(500).send(error.message)
+  res.json(user)
+}
