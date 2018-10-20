@@ -10,6 +10,7 @@ const PORT = process.env.PORT
 const URI = process.env.MONGO_URI
 
 const userRoute = require('./routes/user')
+const courseRoute = require('./routes/courses')
 const error = require('./middleware/errors')
 
 app.use(bodyParser.json())
@@ -18,11 +19,12 @@ app.use(logger('dev'))
 app.use(cors())
 
 // connect mongoose
-mongoose.connect(URI, { useNewUrlParser: true })
+mongoose.connect(URI, { useNewUrlParser: true, createIndexes: true })
   .then(() => console.log('Connected to Database'))
   .catch(err => console.log('An error occurred...', err))
 
 app.use('/user', userRoute)
+app.use('/user/course', courseRoute)
 app.use(error)
 
 app.listen(PORT, () => console.log(`server running at port: ${PORT}`))
